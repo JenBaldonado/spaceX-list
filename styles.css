@@ -1,0 +1,92 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+html, body{
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+body{
+  background-color: #f1f1f1;
+
+}
+
+input{
+  border:none;
+  height: 3em;
+  padding:1em;
+}
+
+.form{
+  padding-bottom:30px;
+  padding-top: 50px;
+}
+
+input, .card{
+  display: block;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  margin:auto;
+  -webkit-box-shadow: -1px 1px 10px 0px rgba(79,74,74,0.47);
+  -moz-box-shadow: -1px 1px 10px 0px rgba(79,74,74,0.47);
+  box-shadow: -1px 1px 10px 0px rgba(79,74,74,0.47);
+}
+
+.card{
+  padding-top: 30px;
+  height: 35em;
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+img{
+  width:10em;
+  height:10em;
+  border:  1px solid rgb(56, 56, 56);
+}
+
+.item #details{
+  margin-left:16px;
+}
+
+.item{
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+  position:relative;
+  height:100%;
+  margin:auto;
+  opacity:1;
+  padding:2em;
+  transition: 1ms;
+}
+
+.preloader.show {
+  opacity: 1;
+ }
+
+.preloader{
+  background: rgb(255, 255, 255);
+  width:5vw;
+  height:3vh;
+  text-align: center;
+  display: flex;
+  margin:auto;
+  border: none;
+  opacity:0;
+  margin-bottom: 2em;
+}
+
+
+
+#message{
+  text-align: center;
+}
+
+
+  
