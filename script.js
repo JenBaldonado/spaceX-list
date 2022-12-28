@@ -110,8 +110,8 @@ const loaderObserver = new IntersectionObserver((entries) => {
 
 loaderObserver.observe(loader);
 
-/* ----- SEARCH FUNCTION ------ */
-const SEARCH_API = "https://api.spacexdata.com/v4/launches/query/";
+/* ----- SEARCH EVENT FUNCTION ------ */
+/* const SEARCH_API = "https://api.spacexdata.com/v4/launches/query/";
 
 async function searchItems(url){
   const res = await fetch(url,
@@ -132,14 +132,14 @@ async function searchItems(url){
 }
 
 searchItems(SEARCH_API);
-
+ */
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
   const searchTerm = search.value;
 
   if (searchTerm && searchTerm !== "") {
-    showItems(SEARCH_API + searchTerm);
+    showItems(API_URL + searchTerm);
     console.log('search')
 
     search.value = "";
